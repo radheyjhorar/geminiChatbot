@@ -10,4 +10,22 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# geminiChatbot" 
+"# geminiChatbot"
+
+
+
+<!-- Chat Transfer Gemini to coffee shop -->
+In chatHistory = [
+  {
+    hideInChat: true,
+    role: "model",
+    text: filename, (Information file link hare)
+  }
+]
+
+In ChatMessage component return (
+  !chat.hideInChat && (
+    <!-- content -->
+  )
+)
+<!-- If we want to chat with direct Gemini remove all that the above -->

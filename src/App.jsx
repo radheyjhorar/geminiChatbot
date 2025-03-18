@@ -2,9 +2,16 @@ import { useEffect, useRef, useState } from "react";
 import ChatBotIcon from "./components/ChatBotIcon";
 import ChatForm from "./components/ChatForm";
 import ChatMessage from "./components/ChatMessage";
+import { companyInfo } from "./companyInfo";
 
 const App = () => {
-  const [chatHistory, setChatHistory] = useState([]);
+  const [chatHistory, setChatHistory] = useState([
+    {
+      hideInChat: true,
+      role: "model",
+      text: companyInfo,
+    },
+  ]);
   const [showChatbot, setShowChatbot] = useState(false);
   const chatBodyRef = useRef();
 
@@ -105,9 +112,7 @@ const App = () => {
       <div className="defaut-page">
         <div className="welcome-content">
           <p>Welcome</p>
-          <p>
-            Hi Boys, I'm here to help you with Gemini chatbot.
-          </p>
+          <p>Hi Boys, I'm here to help you with Gemini chatbot.</p>
           <p>How can I help?</p>
         </div>
       </div>
